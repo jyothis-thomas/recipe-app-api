@@ -8,4 +8,4 @@ services:
 before_script: pip install docker-compose
 
 script:
-  - docker-compose run app sh -c "manage.py runserver && flake8"
+  - docker-compose run app sh -c "python3 manage.py runserver && flake8"
